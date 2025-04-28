@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #quote-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+    color: #f9fafb;
+    animation: fadeIn 1s ease-in-out;
+    transition: all 0.3s ease;
+  }
+  
+  #quote-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  }
+  
+  #text {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  #author {
+    margin-top: 1.5rem;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #d1d5db;
+    text-align: right;
+  }
+  
+  #new-quote,
+  #tweet-quote {
+    padding: 0.75rem 1.5rem;
+    margin: 1.5rem 0.5rem 0 0.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #new-quote {
+    background: linear-gradient(135deg, #10b981, #34d399);
+    color: white;
+  }
+  
+  #tweet-quote {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: white;
+  }
+  
+  #new-quote:hover,
+  #tweet-quote:hover {
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
